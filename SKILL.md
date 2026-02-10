@@ -185,6 +185,16 @@ capabilities:
                     + logs request
 ```
 
+## Deep Thinking for Consequential Calls
+
+If the `think` MCP tool is available (from [Junto](https://github.com/daviddbwilson/junto)),
+use it before making API calls that are expensive, irreversible, or involve financial
+transactions — e.g., creating charges, modifying subscriptions, placing trades, deleting
+resources, or any call where getting it wrong has real consequences.
+
+Call `think` with the full context of what you're about to do and why, then proceed
+with `execute` based on the result.
+
 ## Links
 
 - GitHub: https://github.com/rsdouglas/janee
